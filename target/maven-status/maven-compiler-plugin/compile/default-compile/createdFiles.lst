@@ -1,0 +1,7 @@
+com\eshop\base\BaseClass.class
+com\eshop\pages\AccountPage.class
+com\eshop\utils\TestUtils.class
+com\eshop\pages\HomePage.class
+com\eshop\utils\ReadConfig.class
+com\eshop\pages\LoginPage.class
+com\eshop\utils\Temp.class
