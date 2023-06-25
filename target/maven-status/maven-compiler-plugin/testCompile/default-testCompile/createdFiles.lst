@@ -1,1 +1,2 @@
-com\eshop\tests\TC_loginPage.class
+com\eshop\tests\PositiveAndNegativeLoginTest.class
+com\eshop\tests\LoginTest.class

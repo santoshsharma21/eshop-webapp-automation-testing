@@ -9,37 +9,22 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">16,617</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">43,906</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.eshop.tests.TC_loginPage</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1687364967592</td><td rowspan="1">241</td></tr><tr class="failedeven"><td><a href="#m1">testToFail</a></td><td rowspan="1">1687364975130</td><td rowspan="1">31</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.eshop.tests.PositiveAndNegativeLoginTest</td><td><a href="#m0">loginWithFalseEmailAndFalsePassword</a></td><td rowspan="1">1687699517642</td><td rowspan="1">2520</td></tr><tr class="failedeven"><td><a href="#m1">loginWithFalseEmailAndTruePassword</a></td><td rowspan="1">1687699507601</td><td rowspan="1">2014</td></tr><tr class="failedeven"><td><a href="#m2">loginWithTrueEmailAndFalsePassword</a></td><td rowspan="1">1687699497664</td><td rowspan="1">2480</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.eshop.tests.PositiveAndNegativeLoginTest</td><td><a href="#m3">loginWithTrueEmailAndTruePassword</a></td><td rowspan="1">1687699487438</td><td rowspan="1">2571</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.eshop.tests.TC_loginPage#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=114.0.5735.134)
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [43e9508e40ed5fb73d42e0a88bd4e9f5, clickElement {id=37D51E109825AD10648B300719813390_element_2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SANTOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53695/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (43e9508e40ed5fb73d42e0a88bd4e9f5)] -&gt; xpath: //span[normalize-space()=&apos;My Account&apos;]]
-Session ID: 43e9508e40ed5fb73d42e0a88bd4e9f5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at com.eshop.pages.HomePage.clickMyAccount(HomePage.java:36)
-	at com.eshop.tests.TC_loginPage.loginTest(TC_loginPage.java:32)
+<h2>Test</h2><h3 id="m0">com.eshop.tests.PositiveAndNegativeLoginTest#loginWithFalseEmailAndFalsePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>xyz@yahoo.com</td><td>xyz@12345</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.eshop.tests.PositiveAndNegativeLoginTest.loginWithFalseEmailAndFalsePassword(PositiveAndNegativeLoginTest.java:93)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.eshop.tests.TC_loginPage#testToFail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at com.eshop.tests.TC_loginPage.testToFail(TC_loginPage.java:39)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.eshop.tests.PositiveAndNegativeLoginTest#loginWithFalseEmailAndTruePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>abc@gmail.com</td><td>sony@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.eshop.tests.PositiveAndNegativeLoginTest.loginWithFalseEmailAndTruePassword(PositiveAndNegativeLoginTest.java:76)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.eshop.tests.PositiveAndNegativeLoginTest#loginWithTrueEmailAndFalsePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sony@gmail.com</td><td>sony@1234</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.eshop.tests.PositiveAndNegativeLoginTest.loginWithTrueEmailAndFalsePassword(PositiveAndNegativeLoginTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.eshop.tests.PositiveAndNegativeLoginTest#loginWithTrueEmailAndTruePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sony@gmail.com</td><td>sony@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.eshop.tests.TC_loginPage">
+      <class name="com.eshop.tests.PositiveAndNegativeLoginTest">
         <methods>
+          <include name="afterMethod"/>
+          <include name="loginWithFalseEmailAndFalsePassword"/>
           <include name="beforeMethod"/>
-          <include name="loginTest"/>
+          <include name="loginWithTrueEmailAndFalsePassword"/>
+          <include name="loginWithTrueEmailAndTruePassword"/>
+          <include name="loginWithFalseEmailAndTruePassword"/>
         </methods>
-      </class> <!-- com.eshop.tests.TC_loginPage -->
+      </class> <!-- com.eshop.tests.PositiveAndNegativeLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,7 +1,12 @@
+com\eshop\extentreport\ListenerClass.class
 com\eshop\base\BaseClass.class
 com\eshop\pages\AccountPage.class
+com\eshop\pages\LogoutPage.class
+com\eshop\extentreport\ReportManager.class
+com\eshop\dataprovider\DataProviders.class
+com\eshop\pages\RegisterPage.class
+com\eshop\utils\ExcelUtils.class
 com\eshop\utils\TestUtils.class
 com\eshop\pages\HomePage.class
 com\eshop\utils\ReadConfig.class
 com\eshop\pages\LoginPage.class
-com\eshop\utils\Temp.class

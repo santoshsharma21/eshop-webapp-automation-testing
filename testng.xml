@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<listeners>
-		<listener class-name="com.eshop.extentReport.ListenerClass"></listener>
+		<listener class-name="com.eshop.extentreport.ListenerClass"></listener>
 	</listeners>
 	<test thread-count="5" name="Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.eshop.tests.TC_loginPage" />
+			<class name="com.eshop.tests.LoginTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

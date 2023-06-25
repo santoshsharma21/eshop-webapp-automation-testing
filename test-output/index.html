@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>A:\AutomationProjects_java\eshop\testng.xml</span>
+                    <span>A:\AutomationProjects_java\eshop\positive_negative_testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,15 +103,34 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.eshop.tests.TC_loginPage" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.eshop.tests.PositiveAndNegativeLoginTest" class="method navigator-link" hash-for-method="loginWithFalseEmailAndFalsePassword(xyz@yahoo.com, xyz@12345)">loginWithFalseEmailAndFalsePassword(xyz@yahoo.com, xyz@12345)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.eshop.tests.TC_loginPage" class="method navigator-link" hash-for-method="testToFail">testToFail</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.eshop.tests.PositiveAndNegativeLoginTest" class="method navigator-link" hash-for-method="loginWithFalseEmailAndTruePassword(abc@gmail.com, sony@123)">loginWithFalseEmailAndTruePassword(abc@gmail.com, sony@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.eshop.tests.PositiveAndNegativeLoginTest" class="method navigator-link" hash-for-method="loginWithTrueEmailAndFalsePassword(sony@gmail.com, sony@1234)">loginWithTrueEmailAndFalsePassword(sony@gmail.com, sony@1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.eshop.tests.PositiveAndNegativeLoginTest" class="method navigator-link" hash-for-method="loginWithTrueEmailAndTruePassword(sony@gmail.com, sony@123)">loginWithTrueEmailAndTruePassword(sony@gmail.com, sony@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -126,59 +145,70 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.eshop.tests.TC_loginPage</span>
+              <span class="class-name">com.eshop.tests.PositiveAndNegativeLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=114.0.5735.134)
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [43e9508e40ed5fb73d42e0a88bd4e9f5, clickElement {id=37D51E109825AD10648B300719813390_element_2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SANTOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53695/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (43e9508e40ed5fb73d42e0a88bd4e9f5)] -&gt; xpath: //span[normalize-space()=&apos;My Account&apos;]]
-Session ID: 43e9508e40ed5fb73d42e0a88bd4e9f5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at com.eshop.pages.HomePage.clickMyAccount(HomePage.java:36)
-	at com.eshop.tests.TC_loginPage.loginTest(TC_loginPage.java:32)
+                  <a name="loginWithFalseEmailAndFalsePassword(xyz@yahoo.com, xyz@12345)">
+                  </a> <!-- loginWithFalseEmailAndFalsePassword(xyz@yahoo.com, xyz@12345) -->
+                  <span class="method-name">loginWithFalseEmailAndFalsePassword</span>
+                  <span class="parameters">(xyz@yahoo.com,xyz@12345)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.eshop.tests.PositiveAndNegativeLoginTest.loginWithFalseEmailAndFalsePassword(PositiveAndNegativeLoginTest.java:93)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testToFail">
-                  </a> <!-- testToFail -->
-                  <span class="method-name">testToFail</span>
+                  <a name="loginWithFalseEmailAndTruePassword(abc@gmail.com, sony@123)">
+                  </a> <!-- loginWithFalseEmailAndTruePassword(abc@gmail.com, sony@123) -->
+                  <span class="method-name">loginWithFalseEmailAndTruePassword</span>
+                  <span class="parameters">(abc@gmail.com,sony@123)</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.eshop.tests.TC_loginPage.testToFail(TC_loginPage.java:39)
+	at com.eshop.tests.PositiveAndNegativeLoginTest.loginWithFalseEmailAndTruePassword(PositiveAndNegativeLoginTest.java:76)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithTrueEmailAndFalsePassword(sony@gmail.com, sony@1234)">
+                  </a> <!-- loginWithTrueEmailAndFalsePassword(sony@gmail.com, sony@1234) -->
+                  <span class="method-name">loginWithTrueEmailAndFalsePassword</span>
+                  <span class="parameters">(sony@gmail.com,sony@1234)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.eshop.tests.PositiveAndNegativeLoginTest.loginWithTrueEmailAndFalsePassword(PositiveAndNegativeLoginTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.eshop.tests.PositiveAndNegativeLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithTrueEmailAndTruePassword(sony@gmail.com, sony@123)">
+                  </a> <!-- loginWithTrueEmailAndTruePassword(sony@gmail.com, sony@123) -->
+                  <span class="method-name">loginWithTrueEmailAndTruePassword</span>
+                  <span class="parameters">(sony@gmail.com,sony@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">A:\AutomationProjects_java\eshop\testng.xml</span>
+            <span class="header-content">A:\AutomationProjects_java\eshop\positive_negative_testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -186,12 +216,12 @@ Session ID: 43e9508e40ed5fb73d42e0a88bd4e9f5
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.eshop.extentReport.ListenerClass&quot;/&gt;
+    &lt;listener class-name=&quot;com.eshop.extentreport.ListenerClass&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.eshop.tests.TC_loginPage&quot;/&gt;
+      &lt;class name=&quot;com.eshop.tests.PositiveAndNegativeLoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -231,20 +261,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.eshop.tests.TC_loginPage')
-data.setCell(0, 3, 241);
+data.setCell(0, 1, 'loginWithTrueEmailAndTruePassword')
+data.setCell(0, 2, 'com.eshop.tests.PositiveAndNegativeLoginTest')
+data.setCell(0, 3, 2571);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testToFail')
-data.setCell(1, 2, 'com.eshop.tests.TC_loginPage')
-data.setCell(1, 3, 31);
+data.setCell(1, 1, 'loginWithFalseEmailAndFalsePassword')
+data.setCell(1, 2, 'com.eshop.tests.PositiveAndNegativeLoginTest')
+data.setCell(1, 3, 2520);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginWithTrueEmailAndFalsePassword')
+data.setCell(2, 2, 'com.eshop.tests.PositiveAndNegativeLoginTest')
+data.setCell(2, 3, 2480);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginWithFalseEmailAndTruePassword')
+data.setCell(3, 2, 'com.eshop.tests.PositiveAndNegativeLoginTest')
+data.setCell(3, 3, 2014);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 272 ms</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -270,34 +308,60 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.eshop.tests.TC_loginPage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.eshop.tests.PositiveAndNegativeLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">loginTest</span>
-                <span class="method-start">7748 ms</span>
+                <span class="method-name">loginWithTrueEmailAndTruePassword(sony@gmail.com, sony@123)</span>
+                <span class="method-start">7457 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">8625 ms</span>
+                <span class="method-start">10041 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">8989 ms</span>
+                <span class="method-start">10856 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testToFail</span>
-                <span class="method-start">15286 ms</span>
+                <span class="method-name">loginWithTrueEmailAndFalsePassword(sony@gmail.com, sony@1234)</span>
+                <span class="method-start">17683 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">15697 ms</span>
+                <span class="method-start">20445 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">21174 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginWithFalseEmailAndTruePassword(abc@gmail.com, sony@123)</span>
+                <span class="method-start">27620 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">29834 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">30590 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginWithFalseEmailAndFalsePassword(xyz@yahoo.com, xyz@12345)</span>
+                <span class="method-start">37661 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">40390 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

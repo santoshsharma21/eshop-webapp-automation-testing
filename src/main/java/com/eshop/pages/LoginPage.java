@@ -15,23 +15,22 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
 	WebDriver driver;
-	
+
 	// page objects
 	@FindBy(id = "input-email")
 	WebElement emailTextBox;
-	
+
 	@FindBy(id = "input-password")
 	WebElement passwordTextBox;
-	
+
 	@FindBy(xpath = "//input[@value='Login']")
 	WebElement loginBtn;
 
-	public LoginPage(WebDriver driver){
+	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	
+
 	public AccountPage performLogin(String email, String password) {
 		emailTextBox.clear();
 		emailTextBox.sendKeys(email);
@@ -40,5 +39,4 @@ public class LoginPage {
 		loginBtn.click();
 		return new AccountPage(driver);
 	}
-
 }

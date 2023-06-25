@@ -1,7 +1,12 @@
+A:\AutomationProjects_java\eshop\src\main\java\com\eshop\utils\ExcelUtils.java
 A:\AutomationProjects_java\eshop\src\main\java\com\eshop\base\BaseClass.java
+A:\AutomationProjects_java\eshop\src\main\java\com\eshop\pages\LogoutPage.java
 A:\AutomationProjects_java\eshop\src\main\java\com\eshop\pages\LoginPage.java
 A:\AutomationProjects_java\eshop\src\main\java\com\eshop\utils\ReadConfig.java
+A:\AutomationProjects_java\eshop\src\main\java\com\eshop\extentreport\ReportManager.java
+A:\AutomationProjects_java\eshop\src\main\java\com\eshop\extentreport\ListenerClass.java
+A:\AutomationProjects_java\eshop\src\main\java\com\eshop\pages\RegisterPage.java
 A:\AutomationProjects_java\eshop\src\main\java\com\eshop\utils\TestUtils.java
 A:\AutomationProjects_java\eshop\src\main\java\com\eshop\pages\HomePage.java
-A:\AutomationProjects_java\eshop\src\main\java\com\eshop\utils\Temp.java
+A:\AutomationProjects_java\eshop\src\main\java\com\eshop\dataprovider\DataProviders.java
 A:\AutomationProjects_java\eshop\src\main\java\com\eshop\pages\AccountPage.java

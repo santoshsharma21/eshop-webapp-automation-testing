@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.eshop.extentReport;
+package com.eshop.extentreport;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -38,11 +38,21 @@ public class ListenerClass extends ReportManager implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - FAILED", ExtentColor.RED));
-		test.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable().getMessage() + " - FAILED", ExtentColor.RED));
-		String screenShot = TestUtils.captureScreen(BaseClass.driver, result.getName());
-		test.info(MarkupHelper.createLabel("Screenshot Attached", ExtentColor.GREY));
-		test.fail(MediaEntityBuilder.createScreenCaptureFromPath(screenShot).build());
+
+		if (result.getStatus() == ITestResult.FAILURE) {
+
+			try {
+				test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - FAILED", ExtentColor.RED));
+				test.log(Status.FAIL,
+						MarkupHelper.createLabel(result.getThrowable().getMessage() + " - FAILED", ExtentColor.RED));
+				test.info(MarkupHelper.createLabel("Screenshot Attached", ExtentColor.GREY));
+				String screenShot = TestUtils.captureScreen(BaseClass.driver, result.getName());
+				test.fail(MediaEntityBuilder.createScreenCaptureFromPath(screenShot).build());
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 	@Override
@@ -54,5 +64,4 @@ public class ListenerClass extends ReportManager implements ITestListener {
 	public void onFinish(ITestContext context) {
 		reports.flush();
 	}
-
 }

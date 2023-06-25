@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.eshop.extentReport;
+package com.eshop.extentreport;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -23,7 +23,7 @@ public class ReportManager {
 	public static ExtentReports reports;
 	public static ExtentTest test;
 
-	public void reportSetup() {
+	public static void reportSetup() {
 
 		String dt = new SimpleDateFormat("dd.MM.yyyy_hh.mm.ss").format(new Date());
 		String filename = "Test-Report_ " + dt + ".html";
@@ -31,7 +31,7 @@ public class ReportManager {
 
 		spark = new ExtentSparkReporter(fullpath);
 		spark.config().setTheme(Theme.DARK);
-		spark.config().setReportName("Test Execution Report");
+		spark.config().setReportName("Positive and Negative Test Execution Report");
 		spark.viewConfigurer().viewOrder().as(new ViewName[] { ViewName.DASHBOARD, ViewName.TEST, ViewName.AUTHOR,
 				ViewName.CATEGORY, ViewName.DEVICE }).apply();
 
@@ -42,5 +42,4 @@ public class ReportManager {
 		reports.setSystemInfo("OS", System.getProperty("os.name"));
 		reports.setSystemInfo("Java version", System.getProperty("java.version"));
 	}
-
 }

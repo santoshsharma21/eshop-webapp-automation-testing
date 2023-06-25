@@ -1,0 +1,68 @@
+2023-06-23 21:42:23,676 [main] INFO eshop - Entered Email - sony@gmail.com,Password - sony@123
+2023-06-23 21:42:23,709 [main] INFO eshop - passed
+2023-06-23 21:42:26,986 [main] INFO eshop - Entered Email - sony@gmail.com,Password - pass@1234
+2023-06-23 21:42:27,015 [main] ERROR eshop - failed
+2023-06-23 21:42:29,030 [main] INFO eshop - Entered Email - abc@gmail.com,Password - sony@123
+2023-06-23 21:42:29,144 [main] ERROR eshop - failed
+2023-06-23 21:42:30,949 [main] INFO eshop - Entered Email - jazz@yahoo.com,Password - jazz@2121
+2023-06-23 21:42:30,977 [main] ERROR eshop - failed
+2023-06-23 21:55:24,434 [main] INFO eshop - Entered Email - sony@gmail.com,Password - sony@123
+2023-06-23 21:55:24,498 [main] INFO eshop - passed
+2023-06-23 21:55:27,077 [main] INFO eshop - Entered Email - sony@gmail.com,Password - pass@1234
+2023-06-23 21:55:27,182 [main] ERROR eshop - failed
+2023-06-23 21:55:29,042 [main] INFO eshop - Entered Email - abc@gmail.com,Password - sony@123
+2023-06-23 21:55:29,322 [main] ERROR eshop - failed
+2023-06-23 21:55:30,867 [main] INFO eshop - Entered Email - jazz@yahoo.com,Password - jazz@2121
+2023-06-23 21:55:30,948 [main] ERROR eshop - failed
+2023-06-23 22:24:07,246 [main] INFO eshop - Entered Email - sony@gmail.com,Password - sony@123
+2023-06-23 22:24:07,372 [main] INFO eshop - passed
+2023-06-23 22:24:10,211 [main] INFO eshop - Entered Email - sony@gmail.com,Password - pass@1234
+2023-06-23 22:24:10,230 [main] ERROR eshop - failed
+2023-06-23 22:24:12,017 [main] INFO eshop - Entered Email - abc@gmail.com,Password - sony@123
+2023-06-23 22:24:12,036 [main] ERROR eshop - failed
+2023-06-23 22:24:13,973 [main] INFO eshop - Entered Email - jazz@yahoo.com,Password - jazz@2121
+2023-06-23 22:24:14,144 [main] ERROR eshop - failed
+2023-06-25 18:35:52,683 [main] INFO eshop - Entered Email - sony@gmail.com,Password - sony@123
+2023-06-25 18:35:52,895 [main] INFO eshop - passed
+2023-06-25 18:35:55,805 [main] INFO eshop - Entered Email - sony@gmail.com,Password - pass@1234
+2023-06-25 18:35:55,878 [main] ERROR eshop - failed
+2023-06-25 18:35:57,912 [main] INFO eshop - Entered Email - abc@gmail.com,Password - sony@123
+2023-06-25 18:35:57,927 [main] ERROR eshop - failed
+2023-06-25 18:35:59,619 [main] INFO eshop - Entered Email - jazz@yahoo.com,Password - jazz@2121
+2023-06-25 18:35:59,782 [main] ERROR eshop - failed
+2023-06-25 18:37:09,540 [main] INFO eshop - Entered Email - sony@gmail.com,Password - sony@123
+2023-06-25 18:37:09,579 [main] INFO eshop - passed
+2023-06-25 18:37:12,591 [main] INFO eshop - Entered Email - sony@gmail.com,Password - pass@1234
+2023-06-25 18:37:12,697 [main] ERROR eshop - failed
+2023-06-25 18:37:14,688 [main] INFO eshop - Entered Email - abc@gmail.com,Password - sony@123
+2023-06-25 18:37:14,711 [main] ERROR eshop - failed
+2023-06-25 18:37:16,475 [main] INFO eshop - Entered Email - jazz@yahoo.com,Password - jazz@2121
+2023-06-25 18:37:16,581 [main] ERROR eshop - failed
+2023-06-25 18:43:04,634 [main] INFO eshop - Entered Email - xyz@yahoo.com,Password - xyz@12345
+2023-06-25 18:43:04,662 [main] ERROR eshop - failed
+2023-06-25 18:43:14,142 [main] INFO eshop - Entered Email - abc@gmail.com,Password - sony@123
+2023-06-25 18:43:14,232 [main] ERROR eshop - failed
+2023-06-25 18:43:24,866 [main] INFO eshop - Entered Email - sony@gmail.com,Password - sony@123
+2023-06-25 18:43:24,885 [main] INFO eshop - passed
+2023-06-25 18:46:35,205 [main] INFO eshop - Entered Email - sony@gmail.com,Password - sony@123
+2023-06-25 18:46:35,232 [main] INFO eshop - passed
+2023-06-25 18:46:46,271 [main] INFO eshop - Entered Email - abc@gmail.com,Password - sony@123
+2023-06-25 18:46:46,293 [main] ERROR eshop - failed
+2023-06-25 18:46:56,137 [main] INFO eshop - Entered Email - xyz@yahoo.com,Password - xyz@12345
+2023-06-25 18:46:56,156 [main] ERROR eshop - failed
+2023-06-25 18:54:49,977 [main] INFO eshop - Entered Email - sony@gmail.com,Password - sony@123
+2023-06-25 18:54:50,008 [main] INFO eshop - passed
+2023-06-25 18:55:00,108 [main] INFO eshop - Entered Email - sony@gmail.com,Password - sony@1234
+2023-06-25 18:55:00,125 [main] ERROR eshop - failed
+2023-06-25 18:55:09,555 [main] INFO eshop - Entered Email - abc@gmail.com,Password - sony@123
+2023-06-25 18:55:09,614 [main] ERROR eshop - failed
+2023-06-25 18:55:20,135 [main] INFO eshop - Entered Email - xyz@yahoo.com,Password - xyz@12345
+2023-06-25 18:55:20,161 [main] ERROR eshop - failed
+2023-06-25 19:04:54,611 [main] INFO eshop - Entered Email - sony@gmail.com,Password - sony@123
+2023-06-25 19:04:54,637 [main] INFO eshop - passed
+2023-06-25 19:05:04,324 [main] INFO eshop - Entered Email - sony@gmail.com,Password - sony@1234
+2023-06-25 19:05:04,496 [main] ERROR eshop - failed
+2023-06-25 19:05:14,243 [main] INFO eshop - Entered Email - abc@gmail.com,Password - sony@123
+2023-06-25 19:05:14,462 [main] ERROR eshop - failed
+2023-06-25 19:05:25,228 [main] INFO eshop - Entered Email - xyz@yahoo.com,Password - xyz@12345
+2023-06-25 19:05:25,245 [main] ERROR eshop - failed
